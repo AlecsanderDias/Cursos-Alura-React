@@ -8,6 +8,7 @@ const ListaSuspensa = (props) => {
         <div className="lista-suspensa">
             <label>{props.nomeCampo}</label>
                 <select value={props.valor} onChange={aoDigitado} required={props.obrigatorio}>
+                    <option value={""}></option>
                     {props.itens.map(item => <option key={item}>{item}</option>)}
                 </select>
         </div>
