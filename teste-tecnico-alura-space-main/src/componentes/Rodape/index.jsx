@@ -1,17 +1,17 @@
 import React from 'react';
 import styles from "./Rodape.module.scss";
-import facebook from '../../assets/facebook.svg';
-import twitter from '../../assets/twitter.svg';
-import instagram from '../../assets/instagram.svg';
+import {ReactComponent as Facebook} from '../../assets/facebook.svg';
+import {ReactComponent as Twitter} from '../../assets/twitter.svg';
+import {ReactComponent as Instagram} from '../../assets/instagram.svg';
 
 
 function Rodape() {
   return (
     <footer className={styles.footer}>
         <div  className={styles.footer__icones}>
-            <img src={facebook} alt="Logo do facebook" />
-            <img src={twitter} alt="Logo do twitter" />
-            <img src={instagram} alt="Logo do instagram" />
+            <Facebook />
+            <Twitter />
+            <Instagram />
         </div>
         <h2  className={styles.footer__texto}>Desenvolvido por Alura.</h2>
     </footer>
